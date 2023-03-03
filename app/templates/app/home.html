@@ -1,6 +1,6 @@
 {% extends 'app/base.html' %}
 {% load static %}
-{% block title %}{% endblock title %}
+{% block title %}Home{% endblock title %}
 
 {% block banner_slider %}
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -41,9 +41,9 @@
         <div class="row container">
             <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
                 <div class="goodnesseccount buttermilk smbg">
-                    <a href="#">
+                    <a href="{% url 'category' 'GH' %}">
                         <div class="goodnesseccount text-center">
-                            <img src="{% static 'app/images/product/buffalo-ghee.png' %}" alt="" class="img-responsive center-block">
+                            <img src="{% static 'app/images/product/buffalo-ghee.png' %}" alt="" class="img-responsive center-block" width="300px" height="300px">
                             <p class="mlkpro">Ghee</p>
                         </div>
                     </a>
@@ -51,9 +51,9 @@
             </div>            
             <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
                 <div class="goodnesseccount buttermilk smbg">
-                    <a href="#">
+                    <a href="{% url 'category' 'CR' %}">
                         <div class="goodnesseccount text-center">
-                            <img src="{% static 'app/images/product/curd-total.png' %}" alt="" class="img-responsive center-block">
+                            <img src="{% static 'app/images/product/curd-total.png' %}" alt="" class="img-responsive center-block" width="300px" height="300px">
                             <p class="mlkpro">Curd</p>
                         </div>
                     </a>
@@ -62,9 +62,9 @@
             
             <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
                 <div class="goodnesseccount buttermilk smbg">
-                    <a href="#">
+                    <a href="{% url 'category' 'IC' %}">
                         <div class="goodnesseccount text-center">
-                            <img src="{% static 'app/images/product/kulfi.png' %}" alt="" class="img-responsive center-block">
+                            <img src="{% static 'app/images/product/kulfi.png' %}" alt="" class="img-responsive center-block" width="300px" height="300px">
                             <p class="mlkpro">Kulfi</p>
                         </div>
                     </a>
@@ -74,9 +74,9 @@
             <br><br>
             <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
                 <div class="goodnesseccount buttermilk smbg">
-                    <a href="#">
+                    <a href="{% url 'category' 'MS' %}">
                         <div class="goodnesseccount text-center">
-                            <img src="{% static 'app/images/product/milk-shake-chocolate.png' %}" alt="" class="img-responsive center-block">
+                            <img src="{% static 'app/images/product/milk-shake-chocolate.png' %}" alt="" class="img-responsive center-block" width="300px" height="300px">
                             <p class="mlkpro">Milk Shake</p>
                         </div>
                     </a>
@@ -84,9 +84,9 @@
             </div>            
             <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
                 <div class="goodnesseccount buttermilk smbg">
-                    <a href="#">
+                    <a href="{% url 'category' 'ML' %}">
                         <div class="goodnesseccount text-center">
-                            <img src="{% static 'app/images/product/cow-milk.png' %}" alt="" class="img-responsive center-block">
+                            <img src="{% static 'app/images/product/cow-milk.png' %}" alt="" class="img-responsive center-block" width="300px" height="300px">
                             <p class="mlkpro">Milk</p>
                         </div>
                     </a>
@@ -95,9 +95,9 @@
             
             <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
                 <div class="goodnesseccount buttermilk smbg">
-                    <a href="#">
+                    <a href="{% url 'category' 'IC' %}">
                         <div class="goodnesseccount text-center">
-                            <img src="{% static 'app/images/product/icbars.png' %}" alt="" class="img-responsive center-block">
+                            <img src="{% static 'app/images/product/icbars.png' %}" alt="" class="img-responsive center-block" width="300px" height="300px">
                             <p class="mlkpro">Icebar</p>
                         </div>
                     </a>
