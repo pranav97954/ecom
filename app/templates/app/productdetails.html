@@ -19,17 +19,17 @@
                 <ul class="fs-5" style="font-family: Rajdhani;">
                     <li>{{product.description}}</li> 
                 </ul>
-                {% if request.user.is_authenticated %}
                 <form action="/add-to-cart" class="d-inline">
                     <input type="hidden" name="prod_id" value="{{product.id}}">
                     <button type="submit" class="btn btn-primary shadow px-5 py-2">Add to Cart</button>
                 </form>
                 <a href="{% url 'showcart' %}" class="btn btn-warning shadow px-5 py-2 ms-4">Buy Now</a>
+                {% if wishlist %}
+                <a pid="{{product.id}}" class="minus-wishlist btn btn-danger shadow px-5 py-2 ms-4" style="margin-top: 5px;"><i class="bi bi-heart-fill"></i></a>
                 {% else %}
-                <button type="submit" class="btn btn-primary shadow px-5 py-2"><a href="{% url 'login' %}" class="nav-link text-white">Login</a></button>
+                <a pid="{{product.id}}" class="plus-wishlist btn btn-success shadow px-5 py-2 ms-4" style="margin-top: 5px;"><i class="bi bi-heart-fill"></i></a>
                 {% endif %}
-            </div>
-            
+            </div> 
         </div>
    </div>
 {% endblock main-content %}

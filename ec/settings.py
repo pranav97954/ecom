@@ -134,3 +134,7 @@ EMAIL_HOST_USER = 'pranavkumar97954@gmail.com'
 EMAIL_HOST_PASSWORD = 'psfukvcfalmvmoof'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+
+RAZOR_KEY_ID = "rzp_test_Bjx7zOgf0uNsBU"
+RAZOR_KEY_SECRET  = "IzqMm5zgSsJiZUDO2hUEICgR"
